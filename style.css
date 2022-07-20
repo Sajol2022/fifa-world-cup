@@ -1,0 +1,328 @@
+/*==========================================================================
+Color And Google Fonts Css
+==========================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+:root {
+    --body-color: #4D4D4D;
+    --primary-color: #DD0000;
+    --heading-color: #161616;
+    --white-color: #FFFFFF;
+    --color-1: #B9B9B9;
+    --color-2: #5B5B5B;
+    --border-color-1: #E8E8E8;
+    --border-color-2: #2d2d2d;
+}
+/*==========================================================================
+Common Css
+==========================================================================*/
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--body-color);
+    font-weight: 400;
+}
+.button-one {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;    
+    text-decoration: none;
+    padding: 16px 23px;
+    transition: .4s;
+    border-radius: 5px;
+}
+.button-one i {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.button-one:hover {
+    color: var(--primary-color);
+    background: var(--white-color);
+}
+.button {
+    display: none;
+}
+.button .button-one {
+	padding: 12px 29px 12px 29px;
+}
+.button .button-one:hover {
+	color: var(--white-color);
+	background: var(--heading-color);
+}
+.animation {
+	animation: animation 3s infinite ease-in-out;
+}
+@keyframes animation {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translate(30px, 0px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+/*==========================================================================
+Banner Css
+==========================================================================*/
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 45px auto;
+    background: var(--heading-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.banner-left {
+    padding-left: 60px;
+}
+.banner-left h1 {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;    
+    max-width: 530px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.banner-left p {
+    color: var(--white-color);  
+    max-width: 453px;
+    margin-bottom: 30px;
+}
+.banner-right {
+    padding: 30px 60px 0 0;
+}
+.banner-right img {
+    vertical-align: middle;
+}
+/*==========================================================================
+Blog Css
+==========================================================================*/
+.blog {
+    display: flex;
+    gap: 24px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 85px 0 130px 0;
+}
+.blog-left {
+    width: 20%;
+    position: sticky;
+    top: 0;
+    height: min-content;
+}
+.blog-left-sidebar {
+    background: var(--heading-color);
+    padding: 30px 20px;
+    border-radius: 10px;  
+}
+.blog-left-sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+.blog-left-sidebar ul li {
+    list-style: none;
+}
+.blog-left-sidebar ul li a {
+    background: var(--white-color);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px 12px 17px 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 10px;    
+    transition: all 0.4s ease-out 0s;
+    border: 1px solid var(--border-color-1);
+    color: var(--heading-color);
+    margin-bottom: 25px;
+}
+.blog-left-sidebar ul li a:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+}
+.blog-left-sidebar ul li .active {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+}
+.blog-left-sidebar ul li:last-child a {
+    margin: 0;
+}
+.blog-right {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.blog-right-image {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.blog-right-image img {
+    width: 100%;
+    transition: all 0.5s ease-out 0s;
+    transform: scale(1);
+    vertical-align: middle;
+}
+.blog-right-image:hover img {
+    transform: scale(1.1);
+}
+.blog-right-content {
+    border: 1px solid var(--border-color-1);
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+.blog-right-content > a {
+    border: 1px solid var(--heading-color);
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--heading-color);
+    padding: 2px 18px;
+    transition: all 0.4s ease-out 0s;
+    border-radius: 5px;
+}
+.blog-right-content > a:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+.blog-right-content h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;    
+}
+.blog-right-content h4 a { 
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: all 0.4s ease-out 0s;
+}
+.blog-right-content h4 a:hover { 
+    color: var(--primary-color);
+}
+.blog-right-icon { 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.blog-right-icon p { 
+    margin: 0;
+    color: var(--color-2);
+}
+.blog-right-icon p i { 
+    margin-right: 10px;
+}
+.match-details {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    text-align: center;
+}
+.football-match {
+    border: 1px solid var(--border-color-1);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+.match-flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 22px;
+}
+.match-flag img {
+    vertical-align: middle;
+}
+.match-flag h4 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+.football-match h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    color: var(--heading-color);
+}
+.football-match p {
+    margin: 0;
+}
+/*==========================================================================
+Footer Css
+==========================================================================*/
+.footer {
+    padding: 130px 0;
+    background: var(--heading-color);
+    text-align: center;
+}
+.footer h2 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;    
+    margin: 0;
+}
+.footer-menu {
+    border-top: 1px solid var(--border-color-2);
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+.footer-menu ul {
+    padding: 0;   
+    margin: 0;
+}
+.footer-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 11px 25px;
+    color: var(--color-1);
+    font-weight: 500;
+}
+.footer-social {
+	margin-top: 25px;
+}
+.footer-social ul {
+    padding: 0;   
+    margin: 0;
+}
+.footer-social ul li {
+    list-style: none;
+    display: inline-block;
+}
+.footer-social ul li a i {
+    color: var(--color-1);
+    transition: all 0.4s ease-out 0s;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    border: 1px solid var(--border-color-2);
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+}
+.footer-social ul li a i:hover {
+    color: var(--white-color);
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}

@@ -1,0 +1,123 @@
+/*==========================================================================
+Table Devices Css
+==========================================================================*/
+@media only screen and (max-width: 992px) {
+    /*-----------  Banner  -----------*/
+    .banner-left {
+        padding-left: 40px;
+    }
+    .banner-left h1 {
+        font-size: 40px;
+        line-height: 50px;    
+        margin-bottom: 10px;
+    }
+    .banner-left p {
+        width: 330px; 
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;  
+        margin-bottom: 15px; 
+    }
+    .banner-right img {
+        max-width: 300px;
+    }
+    .banner-right {
+        padding: 70px 40px 0 0;
+    }
+    /*-----------  BLog  -----------*/
+    .blog {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 50px;
+    }
+    .blog-left {
+        width: 100%;
+        position: initial;
+    }
+    .blog-left-sidebar {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+    .blog-left-sidebar ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 22px;
+    }
+    .blog-right {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .match-details {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    /*-----------  Button  -----------*/
+    .button {
+        text-align: center;
+        padding-bottom: 70px;
+        display: block;
+    }      
+}
+/*==========================================================================
+Mobile Devices Css
+==========================================================================*/
+@media only screen and (max-width: 688px) {
+    .button-one {
+        font-size: 18px;
+        padding: 10px 23px;
+    }
+    /*-----------  Banner  -----------*/
+    .banner {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .banner-left {
+        padding-left: 0;
+        text-align: center;
+    }
+    .banner-left h1 {
+        max-width: 230px;
+        margin: 0 auto;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .banner-left p {
+        width: 270px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .banner-right img {
+        max-width: 250px;
+    }
+    .banner-right {
+        padding: 30px 0 0 0;
+        text-align: center;
+    }
+    /*-----------  BLog  -----------*/
+    .blog {
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 130px;
+    }
+    .blog-left-sidebar ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*-----------  Button  -----------*/
+    .button {
+        display: none;
+    }   
+    /*-----------  Footer  -----------*/
+    .footer-menu ul li {
+        display: block;
+    }
+    .footer-menu ul li a {
+        margin: 15px 0;
+    }
+}
