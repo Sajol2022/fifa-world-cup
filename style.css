@@ -297,6 +297,10 @@ Footer Css
     margin: 11px 25px;
     color: var(--color-1);
     font-weight: 500;
+    transition: all 0.4s ease-out 0s;
+}
+.footer-menu ul li a:hover {
+    color: var(--primary-color);
 }
 .footer-social {
 	margin-top: 25px;
